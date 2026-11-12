@@ -1,0 +1,24 @@
+# Track only the code and documentation needed to reproduce the
+# paper's tables and figures. Everything else (the source-data archive,
+# generated intermediates, and outputs) is reproducible from the code.
+
+/*
+!/.gitignore
+!/README.md
+!/run-all.R
+!/00_prep-itt-period-data.R
+!/01_prep-supplementary-vars.R
+!/02_mca-clustering-periods.R
+!/03_figure2-years.R
+!/04_figures3-6-periods.R
+!/05_table3-top-sups.R
+!/06_curated-tables.R
+!/07_validate.R
+
+# never track the zip or the extracted archive (source data ~533 MB)
+larson-lizardo-institutional-movement-logics-SF*
+data-derived/
+output/
+
+# local assistant memory, not part of the repo
+AGENTS.md
